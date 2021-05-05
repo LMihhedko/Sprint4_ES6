@@ -7,16 +7,21 @@
     <script src="js/ejercicios.js"></script>
 </head>
 <body>
-	<div class='wraper'>
-        <form>
-            <label>Número 1:</label><br>
-            <input type="text" id="number1" name="number2"><br><br>
-            <label>Número 2:</label><br>
-            <input type="text" id="number2" name="number2"><br><br>
-            <input type="button" id="button" Value="Ver tabla">
-          </form> 
-          <span id ="table">
-        <span id ="message2">
-	</div>
+	<div class="wrapper">
+    <div id="search-bar">
+      <input type="text" id="myInput" onkeyup="filterNames()" placeholder="Buscar nom.." title="Buscar nom">
+    </div>
+  <h1>Llistat de noms</h1>
+  <div id="no-result">No hi ha resultats</div>
+    <ul id="myUL">
+      <li><a href="#">Albert</a></li>
+      <li><a href="#">Ismael</a></li>
+      <li><a href="#">Luis</a></li>
+      <li><a href="#">Rubén</a></li>
+      <li><a href="#">Jonatan</a></li>
+      <li><a href="#">Jake</a></li>
+      <li><a href="#">Jose</a></li>
+    </ul>
+</div>
 </body>
 </html> 
