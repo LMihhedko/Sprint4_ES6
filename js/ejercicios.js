@@ -1,13 +1,9 @@
-//Ejercicio 2
+//Ejercicio 3
 
-let users = 
-[{ firstName: 'Homer', lastName: 'Simpson' },
-{ firstName: 'Marge', lastName: 'Simpson' },
-{ firstName: 'Bart', lastName: 'Simpson' },
-{ firstName: 'Lisa', lastName: 'Simpson' },
-{ firstName: 'Maggie', lastName: 'Simpson' }];
+let epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
 
-let userFirstName = users.map((user) => user.firstName);
+const epicString = epic.reduce((acc, cur) => {
+    return `${acc} ${cur}`;
+});
 
-console.log(userFirstName)
-
+console.log(epicString)
