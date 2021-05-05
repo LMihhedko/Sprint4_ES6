@@ -1,32 +1,20 @@
-//Ejercicio 6
+//Ejercicio 7
 
-//Resultat final ha de ser un array només amb noms de les tasques
+let makeTable = () => {
 
-let tasks = [
-    {
-       'name' : 'Start React web',
-       'duration' : 120
-    },
-    {
-       'name' : 'Work out',
-       'duration' : 60
-    },
-    {
-       'name' : 'Procrastinate on facebook',
-       'duration' : 240
+    let number1 = prompt('Introduce número 1');
+    let number2 = prompt('Introduce número 2');
+
+    if (number1 <= 10 && number2 <= 10) {
+        for(i = 1; i<=number2; i++) {
+            let result = number1 * i;
+
+            console.log(`${number1} x ${i} = ${result}`); 
+        }
+    }else {
+        console.log('Introduce un número del 1 al 10');
     }
-];
 
-//forEach()
-let taskNames = [];
+}
 
-tasks.forEach(a => {
-    a.name
-    taskNames.push(a.name);
-});
-
-console.log(taskNames)
-
-//map()
-let namesMap = tasks.map(a => a.name);
-console.log(namesMap)
+makeTable()
