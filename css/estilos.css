@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+}
+form {
+    display: inline-block;
+}
+
+.wraper {
+    margin:auto;
+    border: 2px solid black;
+    min-height:300px;
+    max-width:300px;
+    padding:10px;
+}
+
+span {
+    display:block;
+    margin-top:20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding:5px;
+    margin:auto;
+}
