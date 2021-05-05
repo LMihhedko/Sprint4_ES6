@@ -1,9 +1,12 @@
-//Ejercicio 3
+//Ejercicio 4
 
-let epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
+let string = 'Estoy haciendo un ejercicio'
 
-const epicString = epic.reduce((acc, cur) => {
-    return `${acc} ${cur}`;
-});
+let reverse = string => {
+    let arrayString = [...string]
+    let reverseString = arrayString.reverse()
+    let joinedString = reverseString.join('')
+    return joinedString
+}
 
-console.log(epicString)
+console.log(reverse(string))
