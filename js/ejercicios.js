@@ -1,24 +1,32 @@
-//Ejercicio 5
-function b() {
-    // tasques asíncrones , que triguen una estona..
-    setTimeout(() => {
-     return console.log('b')
-    }, 3000);
+//Ejercicio 6
+
+//Resultat final ha de ser un array només amb noms de les tasques
+
+let tasks = [
+    {
+       'name' : 'Start React web',
+       'duration' : 120
+    },
+    {
+       'name' : 'Work out',
+       'duration' : 60
+    },
+    {
+       'name' : 'Procrastinate on facebook',
+       'duration' : 240
     }
-     
-    async function a() {
-    // Ens esperem que la funció b acabi
-        try {
-            let result = await b();
-            doMoreWork()
-        }catch (error){
-            console.log(error)
-        }
-           
-    }
-    
-    function doMoreWork() {
-        return console.log('a');
-    }
-    
-    a()
+];
+
+//forEach()
+let taskNames = [];
+
+tasks.forEach(a => {
+    a.name
+    taskNames.push(a.name);
+});
+
+console.log(taskNames)
+
+//map()
+let namesMap = tasks.map(a => a.name);
+console.log(namesMap)
